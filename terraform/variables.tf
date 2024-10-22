@@ -5,7 +5,7 @@ variable "alicloud_region" {
 
 variable "alicloud_image_id" {
   type    = string
-  default = "Windows Server 2022 DC" 
+  default = "win2022_21H2_x64_dtc_en-us_40G_alibase_20230915.vhd" 
 }
 
 variable "instance_password" {
