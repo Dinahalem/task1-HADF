@@ -9,7 +9,7 @@ resource "alicloud_instance" "main_instance" {
   security_groups = ["${alicloud_security_group.main_sg}"]
   
   zone_id = "me-east-1-a"  
-  vswitch_id = alicloud_vswitch.vswitch.id
+  vswitch_id = ["${alicloud_vswitch.vswitch}"]
 
   cpu = 2
   memory = 4
